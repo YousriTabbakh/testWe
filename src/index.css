@@ -11,3 +11,76 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+  color: unset;
+  transition: opacity 0.5s ease;
+}
+
+a:hover {
+  opacity: 0.2;
+  color: unset;
+}
+
+.App {
+  font-family: sans-serif;
+  padding: 60px 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.displayed-result {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.perso-pages {
+  margin-top: 30px;
+}
+
+.card-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid black;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @media (min-width: 1024px) {
+  
+} */
+
